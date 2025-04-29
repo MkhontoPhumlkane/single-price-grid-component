@@ -1,1 +1,207 @@
-Website Final Project
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Single Price Grid Component</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap">
+  <style>
+    :root {
+      --cyan: hsl(179, 62%, 43%);
+      --bright-yellow: hsl(71, 73%, 54%);
+      --light-gray: hsl(204, 43%, 93%);
+      --grayish-blue: hsl(218, 22%, 67%);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Karla', sans-serif;
+      font-size: 16px;
+      background-color: var(--light-gray);
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      max-width: 800px;
+      width: 100%;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .top-section {
+      padding: 40px;
+    }
+
+    .top-section h1 {
+      color: var(--cyan);
+      margin-bottom: 20px;
+    }
+
+    .top-section h2 {
+      color: var(--bright-yellow);
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .top-section p {
+      color: var(--grayish-blue);
+      line-height: 1.5;
+    }
+
+    .bottom-section {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .subscription, .why-us {
+      flex: 1;
+      padding: 40px;
+      color: white;
+    }
+
+    .subscription {
+      background-color: var(--cyan);
+    }
+
+    .subscription h3 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .price {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .price span {
+      font-size: 32px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .price small {
+      opacity: 0.7;
+    }
+
+    .subscription p {
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+
+    .subscription button {
+      width: 100%;
+      padding: 15px;
+      background-color: var(--bright-yellow);
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .subscription button:hover {
+      background-color: hsl(71, 73%, 50%);
+    }
+
+    .why-us {
+      background-color: hsl(179, 62%, 48%);
+    }
+
+    .why-us h3 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .why-us ul {
+      list-style: none;
+    }
+
+    .why-us ul li {
+      font-size: 14px;
+      margin-bottom: 10px;
+      opacity: 0.8;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 11px;
+      padding: 20px;
+    }
+
+    footer a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    @media (max-width: 600px) {
+      .bottom-section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="container">
+      <div class="top-section">
+        <h1>Join our community</h1>
+        <h2>30-day, hassle-free money back guarantee</h2>
+        <p>Gain access to our full library of tutorials along with expert code reviews. 
+        Perfect for any developers who are serious about honing their skills.</p>
+      </div>
+      <div class="bottom-section">
+        <div class="subscription">
+          <h3>Monthly Subscription</h3>
+          <div class="price">
+            <span>&dollar;29</span>
+            <small>per month</small>
+          </div>
+          <p>Full access for less than &dollar;1 a day</p>
+          <button>Sign Up</button>
+        </div>
+        <div class="why-us">
+          <h3>Why Us</h3>
+          <ul>
+            <li>Tutorials by industry experts</li>
+            <li>Peer & expert code review</li>
+            <li>Coding exercises</li>
+            <li>Access to our GitHub repos</li>
+            <li>Community forum</li>
+            <li>Flashcard decks</li>
+            <li>New videos every week</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Phumlane Mkhonto</a>.
+    </p>
+  </footer>
+</body>
+</html>
